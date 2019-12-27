@@ -30,8 +30,10 @@ public class JavaHTTP {
                 Date today = new Date();
                 String httpResponse = "HTTP/1.1 200 OK\r\n\r\n"+today;
                 String printScreen = "\nHello, this is a short demonstration of HTTP servers in Java";
+                String githubLink = "\nThe link to the Github gist can be found at: https://github.com/fishingguy456/Code-in-Java-HTTP";
                 socket.getOutputStream().write(httpResponse.getBytes("UTF-8"));
                 socket.getOutputStream().write(printScreen.getBytes("UTF-8"));
+                socket.getOutputStream().write(githubLink.getBytes("UTF-8"));
             }
         }
     }
