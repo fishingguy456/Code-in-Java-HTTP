@@ -24,7 +24,7 @@ public class JavaHTTP {
     public static void main(String[] args) throws IOException {
         // TODO code application logic here
         ServerSocket server = new ServerSocket(8080);
-        System.out.println("Listening for connection on port 8080 ....");
+        System.out.println("Visit http://localhost:8080/ to view your Java HTTP server!");
         while (true) {
             try(Socket socket = server.accept()){
                 Date today = new Date();
